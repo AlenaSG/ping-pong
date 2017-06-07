@@ -1,28 +1,42 @@
 $(document).ready(function() {
-  $('#submit_button').click(function(event){
+  $("#formOne").submit(function(event) {
   event.preventDefault();
+   var sentenceInput = $("input#sentence").val().toLowerCase();
 
-  var wordInput = $("input#userInput").val().toLowerCase();
+   var sentenceArray = sentenceInput.split("");
+   var len = sentenceInput.length
 
-  var wordInputArray = wordInput.split('');
-  var reverseInputArray = wordInputArray.reverse();
-  var reverseUserInput = reverseInputArray.join("");
+   alert (sentenceArray);
 
-alert (reverseUserInput);
+       if ((sentenceArray[0] === "a") || (sentenceArray[0]=== "e") || (sentenceArray[0] === "i") || (sentenceArray[0] === "o") || (sentenceArray[0] === "u"))
 
-if (wordInput === reverseUserInput) {
-  alert ("It's a palindrome!");
-} else {
-  alert ("It's not a palindrome!")
-}
-  //reverseString(wordInput);
+       {
+       //$(".newSentence").text(newSentence)
 
-    //var vowels = ['a', 'e', 'i', 'o', 'u'];
-    //for (var i = 0; i < vowels.length; i++) {   // loop through vowels
-    //  for (var j = 0; j < letterArray.length; j++) {
-      //  if (vowels[i] === letterArray[j]) {
-        //  console.log(letterArray[j]);
-        //  wordInput = wordInput.replace(letterArray[j], '-');
-  });
+       alert(sentenceInput + "way");
+     }
+    //}
 
-});
+     });
+   });
+
+
+
+
+
+    //var str = $("input#sentence").val();
+    //var len = sentenceInput.length;
+    //for(i=0;i<len;i++) {
+    //  var letter = sentenceInput.charAt(i);
+    //  sentenceArray.push(letter);
+    //}
+
+    //var sentenceLength = sentenceArray.length;
+    //var newSentence = "";
+  //  for(index = 0; index < sentenceLength; index +=1) {
+    //  if ((sentenceArray[index] === "a") || (sentenceArray[index] === "e") || (sentenceArray[index] === "i") || (sentenceArray[index] === "o") || (sentenceArray[index] === "u")) {
+      //  sentenceArray[index] = "-";
+    //  }
+    //  newSentence += sentenceArray[index];
+  //  }
+    //$(".newSentence").text(newSentence);
