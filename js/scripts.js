@@ -1,10 +1,9 @@
+
+//User logic (part I)
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
 
-  var stringInput = $("input#inputNum").val();
-  var numberInput = parseInt(stringInput);
-
-
+  var numberInput = parseInt($("input#inputNum").val());
 
 //Business logic:
 var newArray = [];
@@ -22,6 +21,8 @@ var play = function(number) {
   }
     return newArray;
 };
+
+
 
 //User interface (front-end) logic:
 var result = play(newArray);
