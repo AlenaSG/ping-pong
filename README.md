@@ -34,7 +34,7 @@ _Output Example:_ 1, 2, ping, (4, pong, ping, 7)
 
 ## Setup/Installation Requirements
 
-* _Open the index.html in the browser or try  https://alenasg.github.io/ping-pong/ 
+* _Open the index.html in the browser or try  https://alenasg.github.io/ping-pong/_
 * _type your number in the input field._
 * _Press the submit button._
 * _See the numbers._
