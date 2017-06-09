@@ -1,11 +1,12 @@
 h1 {
   text-align: center;
   color: orange
+
 }
 
 p {
   font-family:serif;
-  font-size: 150%;
+  font-size: 200%;
   color: orange;
 }
 
@@ -13,26 +14,22 @@ p {
   color: orange;
   background-color: #004d4d;
 }
-/*.sidebar {
-  float:right;
-  font-weight: bolder;
-  color: brown;
-  background-color: #F8C9A6;
-  width: 20%;
-  padding: 15px;
-  text-align: center;
-}*/
 
 .btn {
-  background-color: #ff6600;
+  background-color: #ff6600; /*orange*/
   font-weight: bolder;
+  color: #004d4d; /*dark green*/
+}
+
+label {
+  color: #ff6600;
+}
+
+#inputNum {
+  font-size: 300%;
   color: #004d4d;
 }
 
-
-.well{
-  background-color: #F8E2A6;
-}
 
 .container {
   background-image: url(http://www.csibologna.it/master/foto_pagina_p/8969.jpg);
