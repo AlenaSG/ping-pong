@@ -6,12 +6,12 @@
 
 ## Description
 
-_This web application takes a number from a user and returns a range of numbers from 1 to the chosen number with the following exceptions:
+_This web application takes a number from a user and returns a range of numbers from 1 to the chosen number with the following exceptions:_
 
-Numbers divisible by 3 are replaced with "ping"
-Numbers divisible by 5 are replaced with "pong"
-Numbers divisible by 15 are replaced with "ping-pong"
-A user is able to enter a new number and see new results over and over again._
+_Numbers divisible by 3 are replaced with "ping"_
+_Numbers divisible by 5 are replaced with "pong"_
+_Numbers divisible by 15 are replaced with "ping-pong"_
+_A user is able to enter a new number and see new results over and over again._
 
 ## Specifications
 
@@ -34,7 +34,7 @@ _Output Example:_ 1, 2, ping, (4, pong, ping, 7)
 
 ## Setup/Installation Requirements
 
-* _Open the index.html in the browser._
+* _Open the index.html in the browser or try  https://alenasg.github.io/ping-pong/ 
 * _type your number in the input field._
 * _Press the submit button._
 * _See the numbers._
