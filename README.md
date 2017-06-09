@@ -24,12 +24,12 @@ _Input Example:_ 16
 _Output Example:_ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, ping-pong, 16
 
 * **It can replace numbers divisible by 5 with "pong".**
-_Input Example:_ 5 (6)
-_Output Example:_ 1, 2, ping, 4, pong, (ping)
+_Input Example:_ 5 (7)
+_Output Example:_ 1, 2, 3, 4, pong,(6, 7)
 
 * **It can replace numbers divisible by 3 with "ping".**
 _Input Example:_ 3(7)
-_Output Example:_ 1, 2, ping, (4, 5, ping, 7)
+_Output Example:_ 1, 2, ping, (4, pong, ping, 7)
 
 
 ## Setup/Installation Requirements
