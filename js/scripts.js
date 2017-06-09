@@ -12,19 +12,21 @@ for (var index = 1; index <= numberInput; index +=1) {
 
 
 var newArray = [];
-function findTree(numberArray) {
-        for (i = 0; j< numberArray.length; j++) {
-            if (numberArray[i] % 3 === 0) {
-                newArray.push(numberArray[j]);
-
+var pingPong = function(number) {
+        for (j = 1; j <= numberInput; j++) {
+            if (j % 3 === 0) {
+              newArray.push("ping-pong");
+            } else if (j % 3 !== 0)
+              newArray.push(j);
             }
-                    }
-          return newArray;
-          alert (newArray);
-  }
+return newArray;
+alert (newArray)
+}
+      //return newArray;
 
 
-$(".result").text(newArray);
+var result = pingPong(newArray);
+$(".result").text(result);
 
 event.preventDefault();
 });
