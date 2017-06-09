@@ -10,13 +10,22 @@ for (var index = 1; index <= numberInput; index +=1) {
   //alert (numberArray);
 }
 
-//for (var j = 0; j <= numberArray.length; j ++) {
 
-//}
+var newArray = [];
+function findTree(numberArray) {
+        for (i = 0; j< numberArray.length; j++) {
+            if (numberArray[i] % 3 === 0) {
+                newArray.push(numberArray[j]);
 
-$(".result").append(numberArray);
-//}
+            }
+                    }
+          return newArray;
+          alert (newArray);
+  }
+
+
+$(".result").text(newArray);
+
 event.preventDefault();
-
- });
 });
+ });
