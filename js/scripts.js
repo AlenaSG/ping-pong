@@ -4,25 +4,24 @@ $(document).ready(function() {
   var stringInput = $("input#inputNum").val();
   var numberInput = parseInt(stringInput);
 
-var numberArray = [];
-for (var index = 1; index <= numberInput; index +=1) {
-  numberArray.push(index);
-  //alert (numberArray);
-}
+
 
 
 var newArray = [];
 var pingPong = function(number) {
         for (j = 1; j <= numberInput; j++) {
-            if (j % 3 === 0) {
+            if (j % 15 === 0) {
               newArray.push("ping-pong");
-            } else if (j % 3 !== 0)
-              newArray.push(j);
-            }
-return newArray;
-alert (newArray)
+            } else if (j % 5 === 0) {
+              newArray.push("pong");
+            } else if (j % 3 === 0) {
+            newArray.push("ping");
+          } else {
+          newArray.push(j);
 }
-      //return newArray;
+}
+return newArray;
+}
 
 
 var result = pingPong(newArray);
