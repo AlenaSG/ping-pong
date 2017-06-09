@@ -1,13 +1,20 @@
 h1 {
   text-align: center;
   color: orange
+}
 
+h3 {
+  color: orange;
 }
 
 p {
   font-family:serif;
   font-size: 200%;
   color: orange;
+}
+
+.well {
+  background-color: #004d4d;
 }
 
 .result {
@@ -33,4 +40,8 @@ label {
 
 .container {
   background-image: url(http://www.csibologna.it/master/foto_pagina_p/8969.jpg);
+}
+
+#pingPongRules {
+  display: none;
 }
