@@ -4,16 +4,17 @@ $(document).ready(function() {
   var stringInput = $("input#inputNum").val();
   var numberInput = parseInt(stringInput);
 
-  //var mySumm = numberInput + 1
+var numberArray = [];
+for (var index = 1; index <= numberInput; index +=1) {
+  numberArray.push(index);
+  //alert (numberArray);
+}
 
+//for (var j = 0; j <= numberArray.length; j ++) {
 
-  //alert (numberInput + 1);
-//var numberInput = var stringInput;
-  //
-   //var sentencePigLatin = "";
+//}
 
-//for (var index = 0; index < numberArray.length; index ++) {
-$(".result").text(numberInput);
+$(".result").append(numberArray);
 //}
 event.preventDefault();
 
