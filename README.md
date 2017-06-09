@@ -1,72 +1,42 @@
-# _Pig Latin Translator (igPay atinLay anslatorTray)_
+# _Ping Pong with Numbers_
 
-#### _This program translates English into Pig Latin, 06.07.2017_
+#### _This web application takes a number from a user and returns a range of numbers from 1 to the chosen number with exceptions for numbers divisible by 3, 5 and 15, 06.09.2017_
 
-#### By _**Esvethlynna Pangelinan and Alena Golovina**_
+#### By _**Alena Golovina**_
 
 ## Description
 
-This program translates English into Pig Latin using the following rules:
+_This web application takes a number from a user and returns a range of numbers from 1 to the chosen number with the following exceptions:
 
-* For words beginning with a vowel, add "way" to the end.
-
-* For words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add "ay".
-
-* If the first consonants include "qu", move the "u" along with the "q". Don't forget about words like "squeal" where "qu" doesn't come first!
-
-* For words beginning with "y", treat "y" as a consonant.
+Numbers divisible by 3 are replaced with "ping"
+Numbers divisible by 5 are replaced with "pong"
+Numbers divisible by 15 are replaced with "ping-pong"
+A user is able to enter a new number and see new results over and over again._
 
 ## Specifications
 
-* **Non-alphabetical characters - the program does nothing to since they do not contain consonants or vowels.**
-_Input Example:_ 3
-_Output Example:_ 3
+* **It can count up to the provided number.**
+_Input Example:_ 2
+_Output Example:_ 1, 2
 
-* **Single-letter words beginning with a vowel - adds "way" to the end of the word.**
-_Input Example:_ i
-_Output Example:_ iway
+* **It can replace numbers divisible by 3 with "ping".**
+_Input Example:_ 3(7)
+_Output Example:_ 1, 2, ping, (4, 5, ping, 7)
 
-* **Single-letter words beginning with a vowel regardless of the case - adds "way" to the end of the word.**
-_Input Example:_ I
-_Output Example:_ Iway
+* **It can replace numbers divisible by 5 with "pong".**
+_Input Example:_ 5 (6)
+_Output Example:_ 1, 2, ping, 4, pong, (ping)
 
-* **Multiple-letter words beginning with a vowel - adds "way" to the end of the word.**
-_Input Example:_ an
-_Output Example:_ anway
-
-
-* **Single-letter words beginning with a consonant - adds "ay" to the end of the word.**
-_Input Example:_ p
-_Output Example:_ pay
-
-* **Multiple-letter words beginning with a consonant - moves the consonant to the end and adds "ay" to the end.**
-_Input Example:_ pay
-_Output Example:_ aypay
-
-* **Multiple-letter words beginning with two or more consonants - moves all consecutive consonants to the end and adds "ay" to the end.**
-_Input Example:_ play
-_Output Example:_ ayplay
-
-* **Words beginning with "qu" - moves "qu" to the end and adds "ay" to the end.**
-_Input Example:_ queue
-_Output Example:_ euequay
-
-* **Words beginning with consonant and "qu" - moves all consecutive consonants and "qu" to the end and adds "ay" to the end.**
-_Input Example:_ squeal
-_Output Example:_ ealsquay
-
-* **Words beginning with "y" - moves "y" to the end and adds "ay" to the end.**
-_Input Example:_ yes
-_Output Example:_ esyay
-
-
-
-
-a word that only has one consonant; then a word with two consonants; then a word with three; and then tackle the exceptions to the rule, like "qu" and "y". Once your application can successfully translate single words, work on translating entire sentences.
+* **It can replace numbers divisible by 15 with "ping-pong".**
+_Input Example:_ 15
+_Output Example:_ 1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, ping-pong
 
 ## Setup/Installation Requirements
 
-_Open the index.html in the browser._
+* _Open the index.html in the browser._
+* _type your number in the input field._
+* _Press the submit button._
+* _See the numbers._
 
 ## Known Bugs
 
@@ -74,16 +44,17 @@ _No bugs._
 
 ## Support and contact details
 
-_If you have any questions please contact us at alenasgolivna@gmail.com or esveth@aol.com_
+_If you have any questions please contact us at alenasgolivna@gmail.com._
 
 ## Technologies Used
 
 * HTML
 * CSS
 * JavaScript
+* JQuery
 
 ### License
 
 *This software is licensed under the MIT license.*
 
-Copyright (c) 2017 **_Alena Golovina and Esvethlynna Pangelinan_**
+Copyright (c) 2017 **_Alena Golovina_**
