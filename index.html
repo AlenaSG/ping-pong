@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.2.1.js"></script>
-  <script src="js/scripts.js"></script>
-  <title>Ping-Pong</title>
-</head>
-<body>
-  <div class="container">
-    <h1>Ping-Pong with Numbers!</h1>
-    <p>Please enter a number and hit "PLAY!" to play the game. Can you figure out the rules?</p>
-    <form id="formOne">
-      <div class="form-group">
-        <label for="inputNum">Enter your number here:</label>
-        <input id="inputNum" class="form-control" type="text">
-      </div>
-      <button type="submit" class="btn">PLAY!</button>
-    </form>
-    <p class="result"></p>
-  </div>
-</body>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Ping-Pong</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ping-Pong with Numbers!</h1>
+      <p>Please enter a number and hit "PLAY!" to play the game. Can you figure out the rules?</p>
+      <form id="formOne">
+        <div class="form-group">
+          <label for="inputNum">Enter your number here:</label>
+          <input id="inputNum" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">PLAY!</button>
+      </form>
+      <p class="result"></p>
+      <div class="well" id="pingPongRules">
+        <h3>Thank you for playing! Here are the rules:</h3>
+        <p><Numbers divisible by 3 are replaced with "ping". <br>
+        The program counts up to the provided number.<br>
+        Numbers divisible by 3 are replaced with "ping". <br>
+        Numbers divisible by 5 are replaced with "pong". <br> Numbers divisible by 15 are replaced with "ping-pong".</p>
+        </div>
+    </div>
+  </body>
 </html>
