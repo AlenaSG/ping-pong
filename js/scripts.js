@@ -2,7 +2,7 @@
 //User logic (part I)
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
-
+  $("#pingPongRules").show(); 
   var numberInput = parseInt($("input#inputNum").val());
 
 //Business logic:
