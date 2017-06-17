@@ -1,13 +1,6 @@
-
-//User logic (part I)
-$(document).ready(function() {
-  $("#formOne").submit(function(event) {
-  $("#pingPongRules").show(); 
-  var numberInput = parseInt($("input#inputNum").val());
-
 //Business logic:
-var newArray = [];
-var play = function(number) {
+var play = function(numberInput) {
+  newArray = [];
   for (j = 1; j <= numberInput; j++) {
     if (j % 15 === 0) {
       newArray.push("ping-pong");
@@ -22,11 +15,13 @@ var play = function(number) {
     return newArray;
 };
 
-
-
 //User interface (front-end) logic:
-var result = play(newArray);
-$(".result").text(result);
-event.preventDefault();
+$(document).ready(function() {
+  $("#formOne").submit(function(event) {
+    event.preventDefault();
+    var numberInput = parseInt($("input#inputNum").val());
+    var newArray = play(numberInput);
+    $(".result").text(newArray);
+    $("#pingPongRules").show();
   });
 });
